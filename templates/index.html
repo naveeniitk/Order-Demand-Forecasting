@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <style type="text/css">
+      .CenterDiv{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate3d(-50%, -50%, 0px);
+      }
+    </style>
+    
+
+  </head>
+  <body style="background-color: cadetblue;">
+
+
+
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <div class="mx-auto">
+        <span class="navbar-brand mb-0 h1">Demand Forecast Prediction Model</span>
+      </div>
+    </div>
+      
+  </nav>
+<!-- As a heading -->
+ 
+    
+  </nav>
+  <form action='/' method="POST" class="col s12">
+    <div class="CenterDiv">
+      <select name='cate' style="height: 35px;">
+        <div >
+          <option value="none" selected disabled hidden>CATERGORY</option>
+          <option value ="AIR CARE">AIR CARE</option>
+          <option value ="AIR CONDITIONER SERVICE">AIR CONDITIONER SERVICE</option>
+          <option value ="AUDIO">AUDIO</option>
+          <option value="AUDIO ENHANCEMENT">AUDIO ENHANCEMENT</option>
+          <option value="CNP IT">CNP IT</option>
+          <option value="CNP MOBILITY">CNP MOBILITY</option>
+          <option value="CONSUMABLES">CONSUMABLES</option>
+          <option value="COOKING APPLIANCE SERVICE">COOKING APPLIANCE SERVICE</option>
+          <option value="COOKING APPLIANCES">COOKING APPLIANCES</option>
+          <option value="DESKTOP">DESKTOP</option>
+          <option value="DISHWASHER SERVICE">DISHWASHER SERVICE</option>
+          <option value="ENTERTAINMENT PROMOTION">ENTERTAINMENT PROMOTION</option>
+          <option value="ERECHARGE">ERECHARGE</option>
+          <option value="FANS">FANS</option> 
+          <option value="FOOD PRESERVATION">FOOD PRESERVATION</option> 
+          <option value="GAMING ACCESSORY">GAMING ACCESSORY</option>
+          <option value="HARDWARE MOBILITY">HARDWARE MOBILITY</option> 
+          <option value="HIGH END TV">HIGH END TV</option> 
+          <option value="HOME APPLIANCES PROMOTION">HOME APPLIANCES PROMOTION</option> 
+          <option value="HOME AUDIO SERVICE">HOME AUDIO SERVICE</option>
+          <option value="HOME CARE SERVICE">HOME CARE SERVICE</option> 
+          <option value="HOME VISUAL SERVICE">HOME VISUAL SERVICE</option> 
+          <option value="LAPTOP">LAPTOP</option> 
+          <option value="LAPTOP SERVICE">LAPTOP SERVICE</option> 
+          <option value="LAUNDRY &amp; WASHCARE">LAUNDRY &amp; WASH CARE</option>
+          <option value="LIFESTYLE IT">LIFESTYLE IT</option>
+          <option value="LIFESTYLE MOBILITY">LIFESTYLE MOBILITY</option> 
+          <option value="LIGHTING">LIGHTING</option> 
+          <option value="MEDIA PLAYER">MEDIAPLAYER</option> 
+          <option value="MUSICAL INSTRUMENTS (POWERED)">MUSICAL INSTRUMENTS (POWERED)</option> 
+          <option value="Mobility (Jio Branded)">Mobility (Jio Branded)</option>
+          <option value="PERIPHERAL">PERIPHERAL</option>
+          <option value="PHOTOGRAPHY">PHOTOGRAPHY</option>
+          <option value="PHOTOGRAPHY WEARABLE">PHOTOGRAPHY WEARABLE</option> 
+          <option value="POWER">POWER</option> 
+          <option value="POWER ENTERTAINMENT">POWER ENTERTAINMENT</option> 
+          <option value="POWER HA">POWER HA</option> 
+          <option value="PRINTER">PRINTER</option> 
+          <option value="Printer Services">Printer Services</option> 
+          <option value="REFRIGERATOR SERVICE">REFRIGERATOR SERVICE</option> 
+          <option value="">SMALL DOMESTIC APPL</option> 
+          <option value="SMART HOME DEVICES">SMART HOME DEVICES</option> 
+          <option value="SOFTWARE">SOFTWARE</option> 
+          <option value="STORAGE">STORAGE</option> 
+          <option value="TABLET">TABLET</option>
+          <option value="TABLET SERVICE">TABLET SERVICE</option>
+          <option value="TECH ACCESSORIES IT">TECH ACCESSORIES IT</option>
+          <option value="TECH ACCESSORIES MOBILITY">TECH ACCESSORIES MOBILITY</option>
+          <option value="TELECOM SERVICE">TELECOM SERVICE</option>
+          <option value="WASHER SERVICE">WASHER SERVICE</option>
+          <option value="WEARABLE DEVICE">WEARABLE DEVICE</option>
+          <option value="WEARABLES SERVICE">WEARABLES SERVICE</option>
+          <option value="WIRLESS PHONE">WIRELESS PHONE</option>
+          <option value="WIRELESS PHONE SERVICE">WIRELESS PHONE SERVICE</option>
+          <option value="BIG BAZAAR-PROD">BIG BAZAAR-PROD</option>
+          <option value="DC / STORE CONSUMABLES">DC / STORE CONSUMABLES</option>
+          <option value="DRYER SERVICE">DRYER SERVICE</option>
+          <option value="GAMING SOFTWARE">GAMING SOFTWARE</option>
+          <option value="HARDWARE HA">HARDWARE HA</option>
+
+        </div>
+      </select>
+        <input name='date' type="date" id="datepicker" size='9' value="" style="height: 35px;"   />
+        <input type="submit" name="Predict" value="Predict" style="height: 35px;">
+      </div>
+      <div align="center"></div>
+    </div>
+      
+
+      <div class="row center">
+
+          
+    </form>
+
+    <br>
+    <br>
+    <div align="center">{{prediction_text}}</div>
+
+  
+    
+
+    
+
+      
+
+
+
+
+
+
+      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  </body>
+</html>
