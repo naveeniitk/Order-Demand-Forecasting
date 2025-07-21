@@ -19,6 +19,7 @@ This repository contains a Flask-based web application that predicts the number 
 ---
 
 ## Project Structure
+```cpp
 .
 ├── modelwithacc.pkl # Pre-trained ML model
 ├── app.py # Main Flask app
@@ -34,11 +35,3 @@ This repository contains a Flask-based web application that predicts the number 
 The model is trained and saved as `modelwithacc.pkl`. It is loaded using Python’s `pickle` module and used to generate predictions based on category and date inputs.
 
 ---
-
-## Getting Started
-
-### 1. Clone the Repository
-
-```bash
-git clone <your-bitbucket-repo-url>
-cd <repo-directory>
